@@ -45,7 +45,7 @@ namespace TelegramBot
             // Проверка, если сообщение - это команда /play
             else if (message.Text.ToLower() == "/play") 
             { 
-                string webAppUrl = "http://127.0.0.1:5500/index.html"; 
+                string webAppUrl = "https://vtgoodgame.github.io/Game/"; 
                 // Создание разметки клавиатуры с кнопкой, которая открывает Web App
                 var replyMarkup = new InlineKeyboardMarkup( 
                     InlineKeyboardButton.WithUrl("Начать игру", webAppUrl)); 
